@@ -9,14 +9,14 @@ import NotFound from "./Molecules/NotFound";
 function App() {
   return (
     <>
+      <Header />
       <Routes>
-        <Header/>
         <Route path='/' element={<Intro/>}/>
         <Route path='/contacts' element={<Contacts/>}/>
         <Route path='/search' element={<SearchAPI/>}/>
         <Route path='*' element={<NotFound/>}/>
-        <Footer/>
       </Routes>
+      <Footer />
     </>
   );
 }
