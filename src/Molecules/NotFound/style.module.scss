@@ -1,0 +1,10 @@
+.notFound {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &_message {
+    color: #d3e1ff;
+  }
+}

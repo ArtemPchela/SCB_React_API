@@ -1,0 +1,21 @@
+.inputs {
+
+  .inputs_wrapper {
+    align-items: center;
+
+    &_title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin: 15px 0;
+      align-items: center;
+    }
+  }
+
+  .select {
+    width: 450px;
+    cursor: pointer;
+    color: black;
+    font-weight: 900;
+  }
+}

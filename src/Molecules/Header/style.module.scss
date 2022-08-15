@@ -1,0 +1,79 @@
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 34px;
+  z-index: 100;
+  position: sticky;
+  top: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+
+  &_visible {
+    background-color: #1a1919;
+    width: 90%;
+    margin: 0 auto;
+    top: 1rem;
+    transition: 0.5s ease-in-out;
+  }
+
+  &_nav {
+    margin: 0;
+    width: 50%;
+    @media (max-width: 1024px) {
+      display: none;
+    }
+
+    &_style {
+      margin-right: 30px;
+      font-weight: 900;
+      font-size: 20px;
+      line-height: 140%;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      color: #FFFFFF;
+      transition: 0.5s;
+
+      &:hover {
+        color: #27c7cb;
+        transition: 0.5s;
+      }
+
+      &_select {
+        color: #27c7cb;
+      }
+    }
+  }
+
+  &_logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    &_style {
+      font-weight: 900;
+      color: #ffffff;
+      transition: 0.5s;
+
+      &:hover {
+        color: #27c7cb;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+
+      &_first {
+        font-size: 25px;
+      }
+
+      &_second {
+        font-size: 35px;
+      }
+
+      &_third {
+        font-size: 25px;
+      }
+    }
+  }
+}

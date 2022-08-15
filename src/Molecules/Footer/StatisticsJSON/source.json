@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "title": "SCB",
+    "path": "https://www.scb.se/"
+  },
+  {
+    "id": 2,
+    "title": "Wikipedia",
+    "path": "https://en.wikipedia.org/wiki/Statistics_Sweden"
+  }
+]

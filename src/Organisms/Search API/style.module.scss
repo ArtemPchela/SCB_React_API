@@ -1,0 +1,123 @@
+.search {
+  position: relative;
+  background: #3a3a40;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #FFFFFF;
+  font-family: "Ink Free", sans-serif;
+  overflow-x: hidden;
+
+  &_first {
+    width: 90%;
+    height: 80%;
+    margin: 25px auto;
+    border: 2px solid #27c7cb;
+    border-radius: 7px;
+    background: #3a3a40;
+    flex: 1;
+  }
+
+  &_header {
+    display: flex;
+    flex-direction: column;
+    background: cadetblue;
+    position: absolute;
+    left: 0;
+    transform: translate(-100%);
+    transition: 0.3s;
+
+    &_show {
+      transform: translate(0%);
+      left: 0;
+      transition: 0.3s;
+    }
+
+    &_title {
+      font-size: 20px;
+      font-weight: 700;
+      padding: 5px 0;
+      margin-bottom: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+      overflow: hidden;
+
+      &:hover {
+        color: #27c7cb;
+        transition: 0.3s;
+      }
+    }
+
+    &_loading {
+      font-size: 35px;
+      font-weight: 900;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: none;
+      position: absolute;
+      height: 100%;
+      top: 250px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &_label {
+      position: absolute;
+      top: 250px;
+      left: 45px;
+      background: black;
+      z-index: 100;
+    }
+  }
+
+  .fixed {
+    position: absolute;
+    left: 100px;
+    width: 90%;
+    margin: 25px auto 0;
+    height: calc(100% - 50px);
+    border-radius: 7px;
+    background: #3a3a40;
+    transition: 1s;
+    border: 2px solid #27c7cb;
+    flex: 1 1;
+  }
+
+  .searchButton {
+    background: #ffffff;
+    width: 120px;
+    padding: 12px 17px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.3s;
+    border: 1px solid #27c7cb;
+
+    &:hover {
+      color: #ffffff;
+      background: #27c7cb;
+      transition: 0.3s;
+      border: 1px solid black;
+    }
+  }
+
+  .search_title {
+    font-weight: 900;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 5px 0;
+  }
+}
+
+.modal {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  overflow: scroll;
+}

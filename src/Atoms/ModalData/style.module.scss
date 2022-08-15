@@ -1,0 +1,120 @@
+.modal {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  overflow: scroll;
+}
+
+.modalWindow_styles {
+  background: #212020;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FFFFFF;
+  padding-top: 80px;
+
+  .button {
+    margin: 15px;
+
+    &_style {
+      background: #ffffff;
+      width: 120px;
+      padding: 12px 17px;
+      align-items: center;
+      justify-content: center;cursor: pointer;
+      font-weight: 700;
+      letter-spacing: .1em;
+      transition: 0.5s;
+      border: 1px solid #27c7cb;
+
+      &:hover {
+        color: #ffffff;
+        background: #27c7cb;
+        transition: 0.5s;
+        border: 1px solid black;
+      }
+    }
+  }
+}
+
+.table {
+  margin: 0 15px;
+}
+
+.table_wrapper {
+}
+
+.table_wrapper .table_title {
+  font-size: 150%;
+  line-height: 200%;
+  text-transform: none;
+  font-weight: bold;
+  background-color: #3A3A40;
+  border-style: none;
+}
+
+.table_class {
+  border-right: none;
+  border-top: none;
+  border-left: none;
+  border-bottom: 1px solid #27c7cb;
+  border-collapse: collapse;
+  font-size: 16px;
+  clear: both;
+}
+
+
+.table_class td {
+  margin: 0;
+  text-align: right;
+  border: 1px solid #27c7cb;
+  background-color: #3A3A40;
+  color: #FFFFFF;
+  font-size: 1.1em;
+}
+
+.table_class th, .table_class td.left {
+  margin: 0;
+  text-align: left;
+  border: 1px solid #27c7cb;
+  background-color: #3A3A40;
+}
+
+.table_class tfoot td {
+  margin: 0;
+  text-align: left;
+}
+
+.table_header_first {
+  background-color: #3A3A40;
+  padding: 10px;
+  font-weight: 900;
+}
+
+.table_class td.table_header_first {
+  font-size: 24px;
+  background-color: #3A3A40;
+}
+
+.table_header_middle {
+  font-weight: bold;
+  padding: 10px;
+}
+
+.table_header_last {
+  font-weight: bold;
+  padding: 10px;
+}
+
+.table_data_filled {
+  border: 1px solid #27c7cb;
+  font-size: 0.75em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  white-space: nowrap;
+  padding: 10px;
+}

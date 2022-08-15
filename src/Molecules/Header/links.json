@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "href": "/",
+    "title": "Intro"
+  },
+  {
+    "id": 2,
+    "href": "/search",
+    "title": "Search API"
+  },
+  {
+    "id": 3,
+    "href": "/contacts",
+    "title": "Contacts"
+  }
+]
